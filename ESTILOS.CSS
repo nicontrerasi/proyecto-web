@@ -1,0 +1,130 @@
+body {
+  font-family: 'Antonio', 
+  sans-serif;
+  background-color: #ECEDE7
+}
+
+.portada{
+  align-content: center;
+  display: grid;
+  grid-template-columns: 5fr [x0] 1fr [x1] 3fr [x2] 5fr [x3];
+  grid-template-rows: [y0] 150px [y1];
+  grid-column-start: x0/x3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.header{
+  font-family: "Mr Dafoe";
+  text-align: center;
+  grid-column-start: x1;
+  grid-column-end: x2; 
+}
+
+.logo{
+  grid-column-start: x0;
+}
+
+.text1{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.titulo{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 100px;
+}
+
+.mensaje{
+  margin-top: 0px;
+  text-align: left;
+  grid-row-start: y0;
+  grid-row-start: y0;
+}
+
+.p{
+  font-size: 20px;
+  font-weight:600;
+}
+
+
+.des-noticias{
+  font-family: 'Antonio',sans-serif;
+  color: white;
+}
+
+figure{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.imagen-principal {
+ text-align: center;
+}
+
+.articulo{
+    display: grid;
+    grid-template-columns: 95%;
+}
+
+.titulo-noticia{
+  text-align: center;
+  color: #000000;
+  font-size: 55px;
+  font-weight: 20px;
+  font-width: 20px;
+}
+
+.noticia{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.laterales{
+  background-color: #0b0c0d
+}
+
+.noticia-cont{
+  text-align: left;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.parrafo{
+  font-size: 20px;
+  font-weight: 10px;
+  margin-left: 5%;
+  margin-right: 5%
+}
+
+.sub-t{
+  margin-top: 25px;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #000000;
+  font-size: 35px;
+  font-weight: 20px;
+  font-width: 20px;
+}
+
+.imgn{
+  border-style: ridge;
+  border-width: 5px;
+  border-color: grey
+}
+
+.carousel{
+    flex-direction: column;
+    align-items: center;
+}
+.imagen{
+  width: 620;
+  height: 349;
+}
