@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Minified JS library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>CAOS NEWS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="ESTILOS.css">
+</head>
+
+
+<body>
+
+    <div class="portada">
+        <!-- Contador de visitas -->
+        <div class="contador">
+            <img style="border: 0px solid; display: inline" src="http://www.websmultimedia.com/contador-de-visitas.php?id=295778"></a><br>
+            <p class="parrafo">Contador de visitas</p>
+        </div>
+        <!-- Fin Contador de visitas -->
+
+        <div class="header">
+            <div class="logo">
+                <img class="logo" src="Caos_logo.png">
+            </div>
+            <h1 class="titulo">CAOS</h1>
+            <h3 class="mensaje">NEWS</h3>
+        </div>
+    </div>
+
+
+    <!-- barra de navegacion -->
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">CAOS NEWS</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\index.html">Home</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Categorias 
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\categorias\deportes\categoria-deportes.html">Deportes</a></li>
+                        <li><a href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\categorias\Actualidad\categoria-actualidad.html">Actualidad</a></li>
+                        <li><a href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\categorias\ciencias\categoria-ciencias.html">Ciencias</a></li>
+                        <li><a href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\categorias\politica\categoria-politica.html">Politica</a></li>
+                        <li><a href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\categorias\negocios\categoria-negocio.html">Negocios</a></li>                    
+                    </ul>
+                </li>
+                <li><a href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\galeria\galeria.html">Galeria</a></li>
+                <li><a href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\login\login.html">Iniciar Sesion</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Carrusel de imagenes -->
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="item active" align="center">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="des-noticias">El nuevo mapa estelar que revela los secretos ocultos de la Vía Láctea</h1>
+                    </div>
+                    <a class="imagen" href="categorias/ciencias/nuevo-mapa-estelar-1.html">
+                        <img class="img-ruleta" src="https://r1.abcimg.es/resizer/resizer.php?nuevoancho=620&imagen=%2F%2Fstatic1.abc.es%2Fmedia%2Fciencia%2F2021%2F04%2F22%2Fpia24571-mw-halo-stars-map-ko0B--620x349%40abc.jpg&medio=abc"></a>
+                </div>
+                <div class="item" align="center">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="des-noticias">La producción de cervza 100% Ecologica</h1>
+                    </div>
+                    <a class="imagen" href="categorias/actualidad/cerveza.html">
+                        <img class="img-ruleta" src="https://loopulo.com/wp-content/uploads/2020/10/heineken-espana-energia-solar-loopulo-00.jpg">
+                    </a>
+                </div>
+                <div class="item" align="center">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="des-noticias">Funeral masivo de Tomas Bravo</h1>
+                    </div>
+                    <a class="imagen" href="categorias/actualidad/funeral-masivo.html">
+                        <img class="img-ruleta" src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB1g2y2y.img?h=349&w=620&m=6&q=60&o=f&l=f"></a>
+
+                </div>
+            </div>
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <br>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="contenedor">
+        <div class="item-not">
+            <a href="categorias/ciencias/contra-constelaciones-satelites-elon-musk-3.html"><img class="item-img" src="https://static2.abc.es/media/ciencia/2021/04/20/colision-kiRD--620x349@abc.jpg" alt="" class="item-img"></a>
+            <div class="resumen" align="center">
+                <p>La ESA advierte contra las constelaciones de satélites como la de Elon Musk</p>
+            </div>
+        </div>
+        <div class="item-not">
+            <a href="categorias/actualidad/putin_amenazas.html"><img class="item-img" src="https://static.dw.com/image/57275383_303.jpg" alt="" class="img-min"></a>
+            <div class="resumen" align="center">
+                <p>Putin amenaza</p>
+            </div>
+        </div>
+        <div class="item-not">
+            <a href="categorias/ciencias/agujero-negro-mas-cercano-tierra-2.html"><img class="item-img" src="https://static1.abc.es/media/ciencia/2021/04/22/agujeronegro-kGMF--620x349@abc.jpg" alt="" class="img-min"></a>
+            <div class="resumen" align="center">
+                <p>Descubierto el 'Unicornio', el agujero negro más cercano a la Tierra</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">Something</h1>
+
+            <a class="footer__btn" href="mailto:va.saez@profesor.duocuc.cl">Asistencia</a>
+              
+          <a class="footer__btn" href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\contacto\contacto.html">Contáctanos</a>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">Media</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Online</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Diario impreso</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technology</h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                    <li>
+                        <a href="#">Hardware Design</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Software Design</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Digital Signage</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Automation</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Artificial Intelligence</a>
+                    </li>
+
+                    <li>
+                        <a href="#">IoT</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2019 Something. All rights reserved.</p>
+
+            <div class="legal__links">
+                <span>Made with <span class="heart">♥</span> from Group 5</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
