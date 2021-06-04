@@ -8,6 +8,27 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script> 
+      $(document).ready(function(){
+        $("#flip").click(function(){
+          $("#panel").slideDown("slow");
+    });
+  });
+  </script>
+  <style> 
+    #panel, #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #e5eecc;
+      border: solid 1px #c3c3c3;
+    }
+    
+    #panel {
+      padding: 20px;
+      display: none;
+    }
+    </style>
+
 </head>
 <body>
 
@@ -31,12 +52,14 @@
   </div>
 </nav>
  
-        <div class="alert alert-success" role="alert" align="center">
-            <h4 class="alert-heading">Bien hecho!</h4>
-            <p>La noticia ha sido aceptada para aparecer en el portal principal. </p>
-            <hr>
-            <p class="mb-0">Aquí tienes otras noticias que puedes aceptar o rechazar</p>
-        </div>
+        <div id="flip">Noticia aceptada. <br> <h6> <a href="#">Click para más detalles</a></h6></div>
+        <div id="panel">Tu noticia fue aceptada y será publicada en fecha:
+          <p id="demo"></p>
+          <script>
+          var d = new Date();
+          document.getElementById("demo").innerHTML = d;
+          </script>
+          Buen trabajo</div>
 
         <div class="container" align="center">
     <br>

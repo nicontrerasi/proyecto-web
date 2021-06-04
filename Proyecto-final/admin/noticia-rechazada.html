@@ -8,6 +8,26 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script> 
+      $(document).ready(function(){
+        $("#flip").click(function(){
+          $("#panel").slideDown("slow");
+    });
+  });
+  </script>
+  <style> 
+    #panel, #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #e7c1c1;
+      border: solid 1px #c3c3c3;
+    }
+    
+    #panel {
+      padding: 20px;
+      display: none;
+    }
+    </style>
 </head>
 <body>
 
@@ -30,12 +50,9 @@
     </ul>
   </div>
 </nav>
-<div class="bs-example" align="center">
-    <div class="alert alert-danger fade in">
-        <a href="#" class="close" data-dismiss="alert">&times;</a>
-        <strong>Rechazada</strong> <br>La noticia fue rechazada por: "Falta de fuentes"
-    </div>
-</div>
+
+          <div id="flip">Noticia rechazada. <br> <h6> <a href="#">Click para más detalles</a></h6></div>
+          <div id="panel">Tu noticia fue rechazada por falta de fuentes. Favor resolver y enviar nuevamente</div>
 
         <div class="container" align="center">
     <br>
