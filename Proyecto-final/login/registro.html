@@ -25,18 +25,22 @@
             <div class="image"></div>
             <div class="frm text-white-50">
                 <h1>REGISTRO</h1>
-                <form id="basic-form" action="../admin/nuevas-noticias.html" method="POST">
+                <form id="basic-form" name="basic-form" action="../admin/nuevas-noticias.html" method="POST">
                     <div class="form-group">
                         <label for="username">Usuario  <span>(Minimo 10 caracteres)</span></label>
-                        <input type="text" class="form-control" id="username" placeholder="Ingresa tu usuario" required minlength="10">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Ingresa tu usuario">
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu e-mail" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu e-mail">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Contraseña<span>(Minimo 8 caracteres)</span></label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu contraseña" required minlength="8">
+                        <label for="pwd">Contraseña <span>(Minimo 8 caracteres)</span></label>
+                        <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Ingresa tu contraseña">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwdcon">Confirme contraseña</label>
+                        <input type="password" class="form-control" id="pwdcon" name="pwdcon" placeholder="Reingrese su contraseña">
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-success btn-lg" role="button">Registrarse</button>
