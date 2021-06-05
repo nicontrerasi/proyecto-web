@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  
-  <title>REGISTRO</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="registro.css">
-  <style>
- </style>
+
+    <title>REGISTRO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="registro.js"></script>
+    <link rel="stylesheet" type="text/css" href="registro.css">
+    <style>
+
+    </style>
 </head>
-     <body>    
-      <body>
+
+<body>
+
+    <body>
         <div class="container" id="registration-form">
             <div class="image"></div>
             <div class="frm text-white-50">
                 <h1>REGISTRO</h1>
-                <form>
+                <form id="basic-form" action="../admin/nuevas-noticias.html" method="POST">
                     <div class="form-group">
-                        <label for="username">Usuario </label>
-                        <input type="text" class="form-control" id="username" placeholder="Ingresa tu usuario">
+                        <label for="username">Usuario  <span>(Minimo 10 caracteres)</span></label>
+                        <input type="text" class="form-control" id="username" placeholder="Ingresa tu usuario" required minlength="10">
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu e-mail">
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu e-mail" required>
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Contraseña</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu contraseña">
+                        <label for="pwd">Contraseña<span>(Minimo 8 caracteres)</span></label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu contraseña" required minlength="8">
                     </div>
                     <div class="form-group">
-                    <a href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\admin\nuevas-noticias.html" class="btn btn-success btn-lg" role="button">Registrarse</a>
+                        <button type="submit" class="btn btn-success btn-lg" role="button">Registrarse</button>
                     </div>
                 </form>
             </div>
         </div>
-        
 
-    <!-- JavaScript -->
-    <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-
-</body>
-
-</html>
     </body>
 
-    
+</html>
+</body>
+
+
 </html>
