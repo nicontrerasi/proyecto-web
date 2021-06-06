@@ -8,6 +8,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+  <script src="formulario_contacto.js"></script>
 </head>
 <body>
 
@@ -31,13 +34,13 @@
   </div>
 </nav>
 <div class="container">
-  <form>
+  <form action="" id="formulario_contacto">
     <h2>Contáctanos</h2>
     <div class="row">
       <div class="col-md-6">
         <div class="form-group">
           <label for="first">Nombre</label>
-          <input type="text" class="form-control" placeholder="Nombre" id="Nombre">
+          <input type="text" name = Nombre class="form-control" placeholder="Nombre" id="Nombre">
         </div>
       </div>
       <!--  col-md-6   -->
@@ -45,7 +48,7 @@
       <div class="col-md-6">
         <div class="form-group">
           <label for="last">Apellido</label>
-          <input type="text" class="form-control" placeholder="Apellido" id="Apellido">
+          <input type="text" name = Apellido class="form-control" placeholder="Apellido" id="Apellido">
         </div>
       </div>
       <!--  col-md-6   -->
@@ -56,7 +59,7 @@
       <div class="col-md-6">
         <div class="form-group">
           <label for="company">Compañia</label>
-          <input type="text" class="form-control" placeholder="Compañia" id="Compañia">
+          <input type="text" name = Compañia class="form-control" placeholder="Compañia" id="Compañia">
         </div>
 
 
@@ -67,7 +70,7 @@
 
         <div class="form-group">
           <label for="phone">Numero de telefono</label>
-          <input type="tel" class="form-control" id="phone" placeholder="Telefono">
+          <input type="tel" name = Telefono class="form-control" id="phone" placeholder="Telefono">
         </div>
       </div>
       <!--  col-md-6   -->
@@ -80,7 +83,7 @@
 
         <div class="form-group">
           <label for="email">Correo</label>
-          <input type="email" class="form-control" id="email" placeholder="Correo">
+          <input type="email" name = email class="form-control" id="email" placeholder="Correo">
         </div>
       </div>
       <!--  col-md-6   -->
@@ -88,7 +91,7 @@
       <div class="col-md-6">
         <div class="form-group">
           <label for="url">Página web <small>Favor incluir http://</small></label>
-          <input type="url" class="form-control" id="url" placeholder="url">
+          <input type="url" name = url class="form-control" id="url" placeholder="url">
         </div>
 
       </div>
@@ -117,7 +120,59 @@
       </label>
     </div>
 
+    <input type="reset" value=Limpiar>
+    <button type="button" id="guardar">Guardar</button>
 
-    <a href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\contacto\contacto-correcto.html" class="btn btn-success btn-lg" role="button">Enviar</a>
+
   </form>
+
+  
+  <script>
+
+$(document).ready(function() {
+  $("#formulario_contacto").validate({
+    rules: {
+      Nombre : {
+        'required': true,
+        'minlength': 3
+      },
+      Telefono: {
+        required: true,
+        number: true,
+        min: 3
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      Apellido: {
+        required: true,
+        minlength: 3
+        },
+      Compañia:{
+        required: true,
+        minlength: 3
+      },
+      url:{
+        required: true,
+        minlength: 3
+      }
+      
+    }
+  });
+});
+
+$("#guardar").click(function(){
+  if($("#formulario_contacto").valid() == true) {
+    alert("Tu formulario se ha enviado satisfactoriamente")
+
+    return
+  }
+
+      
+      })
+
+
+
+  </script>
 </div>
