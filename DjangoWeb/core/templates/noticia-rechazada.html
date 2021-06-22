@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nuevas noticias</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script> 
+      $(document).ready(function(){
+        $("#flip").click(function(){
+          $("#panel").slideDown("slow");
+    });
+  });
+  </script>
+  <style> 
+    #panel, #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #e7c1c1;
+      border: solid 1px #c3c3c3;
+    }
+    
+    #panel {
+      padding: 20px;
+      display: none;
+    }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">CAOS NEWS</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Administrar 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="Subir-noticia">Crear noticia</a></li>
+          <li><a href="Nuevas-noticias">Administrar noticias</a></li>
+        </ul>
+      </li>
+      <li><a href="Contacto">Soporte</a></li>
+      <li><a href="/">Cerrar sesión</a></li>
+    </ul>
+  </div>
+</nav>
+
+          <div id="flip">Noticia rechazada. <br> <h6> <a href="#">Click para más detalles</a></h6></div>
+          <div id="panel">Tu noticia fue rechazada por falta de fuentes. Favor resolver y enviar nuevamente</div>
+
+        <div class="container" align="center">
+    <br>
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="https://pbs.twimg.com/media/Cj6a39FWUAEAg94.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Diego Encina</h4>
+      <h4 class="card-title">Peridista de Actualidad</h4>
+      <p class="card-text">Nueva noticia: La vacuna chilena contra el Covid provoca más covid</p>
+      <a href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\admin\noticia-aceptada.html" class="btn btn-success">Aceptar</a>
+      <a href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\admin\noticia-rechazada.html" class="btn btn-danger">Rechazar</a>
+    </div>
+  </div>
+  <br>
+
+  <div>
+    <div class="container" align="center">
+    <br>
+  <div class="card" style="width:400px" align="center">
+    <img class="card-img-top" src="https://www.latercera.com/resizer/V1d63PDh6mZKPx-u6mBhBIZqaI4=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/YJVO2Q2R4FD4HO33THSA7W36EM.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Luis Ledezma</h4>
+      <h4 class="card-title">Peridista de Astronomía</h4>
+      <p class="card-text">Nueva noticia: Biografía de la primera mujer que pisará la luna</p>
+      <a href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\admin\noticia-aceptada.html" class="btn btn-success">Aceptar</a>
+      <a href="C:\Users\56948\proyecto-web\Bootstrap\proyecto-web\Proyecto-final\admin\noticia-rechazada.html" class="btn btn-danger">Rechazar</a>
+    </div>
+  </div>
+  <br>
+
+</body>
+</html>

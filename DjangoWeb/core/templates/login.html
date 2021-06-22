@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"> {% load static %} 
+
+<head>
+  
+  <title>LOGIN</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="{% static 'js/login.js' %}"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+  <style>
+ </style>
+</head>
+     <body>    
+      
+        <div class="container" id="registration-form">
+            <div class="image" src="{% static 'img/desk.png' %}"></div>
+            <div class="frm text-white-50">
+                <h1>LOGIN</h1>
+                <form  id="basic-form" name="basic-form" action="Nuevas-noticias" method="GET">
+                    <div class="form-group">
+                        <label for="username">Usuario </label>
+                        <input type="text" class="form-control" id="username" name ="username" placeholder="Ingresa tu usuario">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Contraseña</label>
+                        <input type="password" class="form-control" id="pwd" name = "pwd" placeholder="Ingresa tu contraseña">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-lg" role="button">Iniciar sesion</button>
+                        <a href="Registro" class="btn btn-success btn-lg" role="button">Registrarse</a>
+                    </div>
+                </form>
+            </div>
+        </div> 
+    <!-- JavaScript -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
