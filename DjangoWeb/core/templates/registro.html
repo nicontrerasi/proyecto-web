@@ -25,8 +25,10 @@
             <div class="image"></div>
             <div class="frm text-white-50">
                 <h1>REGISTRO</h1>
-                <form id="basic-form" name="basic-form" action="../admin/nuevas-noticias.html" method="POST">
+                <form id="basic-form" name="basic-form" action="nuevas-noticias.html" method="post">
+                {% csrf_token %}
                     <div class="form-group">
+                    {{ form.as_table }}
                         <label for="username">Usuario  <span>(Minimo 10 caracteres)</span></label>
                         <input type="text" class="form-control" id="username" name="username" placeholder="Ingresa tu usuario">
                     </div>
@@ -35,12 +37,12 @@
                         <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu e-mail">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Contraseña <span>(Minimo 8 caracteres)</span></label>
-                        <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Ingresa tu contraseña">
+                        <label for="pwd1">Contraseña <span>(Minimo 8 caracteres)</span></label>
+                        <input type="password" class="form-control" id="pwd1" name="pwd1" placeholder="Ingresa tu contraseña">
                     </div>
                     <div class="form-group">
-                        <label for="pwdcon">Confirme contraseña</label>
-                        <input type="password" class="form-control" id="pwdcon" name="pwdcon" placeholder="Reingrese su contraseña">
+                        <label for="pwd2">Confirme contraseña</label>
+                        <input type="password" class="form-control" id="pwd2" name="pwd2" placeholder="Reingrese su contraseña">
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-success btn-lg" role="button">Registrarse</button>

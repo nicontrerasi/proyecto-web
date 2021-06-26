@@ -1,6 +1,29 @@
-from django.shortcuts import render
+from django.forms import models
+from django.http import request
+from django.http.request import HttpRequest
+from django.shortcuts import redirect, render
+from django.contrib.auth import login, authenticate
+from .forms import CustomUserCreationForm
+from django.http import HttpRequest
 
 # Create your views here.
+
+def registro(request):
+    data ={
+        'form': CustomUserCreationForm()
+    }
+
+    if request.method == 'POST':
+        formulario = CustomUserCreationForm(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+            user = authenticate(username=formulario.cleaned_data["username"], password=formulario.cleaned_data["pwd1"])
+            login(request, user)
+            return redirect(to="home")
+        data["form"] = formulario
+
+    return render(request, 'registro.html', data)
+    
 
 
 def home(request):

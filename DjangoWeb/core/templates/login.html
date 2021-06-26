@@ -22,8 +22,10 @@
             <div class="image" src="{% static 'img/desk.png' %}"></div>
             <div class="frm text-white-50">
                 <h1>LOGIN</h1>
-                <form  id="basic-form" name="basic-form" action="Nuevas-noticias" method="GET">
+                <form id="basic-form" name="basic-form" action="Nuevas-noticias" method="get">
+                    {% csrf_token %}
                     <div class="form-group">
+                    {{form.as_table}}
                         <label for="username">Usuario </label>
                         <input type="text" class="form-control" id="username" name ="username" placeholder="Ingresa tu usuario">
                     </div>
