@@ -1,6 +1,8 @@
 <!DOCTYPE html> {% load static %}
 <html lang="en">
 
+{% load crispy_forms_tags %}
+
 <head>
 
     <title>REGISTRO</title>
@@ -25,29 +27,19 @@
             <div class="image"></div>
             <div class="frm text-white-50">
                 <h1>REGISTRO</h1>
-                <form id="basic-form" name="basic-form" action="nuevas-noticias.html" method="post">
+                <form id="formulario" name="basic-form" action="" method="post">
                 {% csrf_token %}
                     <div class="form-group">
-                    {{ form.as_table }}
-                        <label for="username">Usuario  <span>(Minimo 10 caracteres)</span></label>
-                        <input type="text" class="form-control" id="username" name="username" placeholder="Ingresa tu usuario">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu e-mail">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd1">Contraseña <span>(Minimo 8 caracteres)</span></label>
-                        <input type="password" class="form-control" id="pwd1" name="pwd1" placeholder="Ingresa tu contraseña">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd2">Confirme contraseña</label>
-                        <input type="password" class="form-control" id="pwd2" name="pwd2" placeholder="Reingrese su contraseña">
-                    </div>
+                    {{ form | crispy }}
+                        
                     <div class="form-group">
                         <button type="submit" class="btn btn-success btn-lg" role="button">Registrarse</button>
                     </div>
                 </form>
+                <div class="alert alert-success" role="alert">
+                    {{ mensaje }}
+                </div>
+                </div>
             </div>
         </div>
 

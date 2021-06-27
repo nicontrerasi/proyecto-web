@@ -1,10 +1,10 @@
 from django.urls import path
-from .views import registro, c_actualidad, c_ciencias, c_deportes, c_negocios, c_politica, contacto, contacto_c, galeria, home, n_aceptada, n_noticias, n_rechazada, noticia_actualidad1, noticia_actualidad2, noticia_actualidad3, noticia_ciencias1, noticia_ciencias2, noticia_ciencias3, noticia_deportes1, noticia_deportes2, noticia_negocios1, noticia_negocios2, noticia_negocios3, noticia_politica1, noticia_politica2, registro, inicio, s_noticia
+from .views import form_user, c_actualidad, c_ciencias, c_deportes, c_negocios, c_politica, contacto, contacto_c, galeria, home, n_aceptada, n_noticias, n_rechazada, noticia_actualidad1, noticia_actualidad2, noticia_actualidad3, noticia_ciencias1, noticia_ciencias2, noticia_ciencias3, noticia_deportes1, noticia_deportes2, noticia_negocios1, noticia_negocios2, noticia_negocios3, noticia_politica1, noticia_politica2, registro, inicio, s_noticia
 
 urlpatterns = [
     path('', home,name="Home"),
     path('Inicio/', inicio,name="Inicio"),
-    path('Inicio/Registro/', registro,name="registro"),
+    path('Inicio/Registro/', form_user,name="form_user"),
     path('Inicio/Registro/nuevas-noticias.html',n_noticias,name="n_noticias"),
     path('Inicio/Subir-noticia',s_noticia,name="s_noticia"),
     path('Inicio/Noticia-aceptada',n_aceptada,name="n_aceptada"),
